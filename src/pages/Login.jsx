@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { FaUserInjured, FaUserMd, FaUserShield } from 'react-icons/fa';
+import { FaUserInjured, FaUserMd, FaUserShield, FaUserNurse } from 'react-icons/fa';
 import './Login.css';
 
 const Login = () => {
@@ -25,6 +25,7 @@ const Login = () => {
         login(role, email);
         
         if (role === 'patient') navigate('/dashboard/patient');
+        if (role === 'worker') navigate('/dashboard/worker');
         if (role === 'doctor') navigate('/dashboard/doctor');
         if (role === 'admin') navigate('/dashboard/admin');
     };
@@ -42,6 +43,12 @@ const Login = () => {
                         <FaUserInjured /> Patient
                     </button>
                     <button 
+                        className={`tab-btn ${role === 'worker' ? 'active' : ''}`} 
+                        onClick={() => setRole('worker')}
+                    >
+                        <FaUserNurse /> Worker
+                    </button>
+                    <button 
                         className={`tab-btn ${role === 'doctor' ? 'active' : ''}`} 
                         onClick={() => setRole('doctor')}
                     >
@@ -54,6 +61,7 @@ const Login = () => {
                         <FaUserShield /> Admin
                     </button>
                 </div>
+                
 
                 <form onSubmit={handleSubmit} className="login-form">
                     <div className="form-group">

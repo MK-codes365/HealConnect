@@ -1,0 +1,207 @@
+.case-status-page {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: white;
+}
+
+.page-header {
+    margin-bottom: 3rem;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(30, 41, 59, 0.7);
+    border-radius: 16px;
+}
+
+.empty-state h3 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+.empty-state p {
+    color: #94a3b8;
+    margin-bottom: 2rem;
+}
+
+.cases-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.case-card {
+    background: rgba(30, 41, 59, 0.7);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.case-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.case-id {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #14b8a6;
+}
+
+.case-time {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.case-body {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.urgency-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.specialty-tag {
+    padding: 0.5rem 1rem;
+    background: rgba(139, 92, 246, 0.2);
+    border: 1px solid #8b5cf6;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.symptoms-preview {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.status-tracker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+.status-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.step-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(100, 116, 139, 0.3);
+    border: 2px solid #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.step-circle.active {
+    background: #14b8a6;
+    border-color: #14b8a6;
+    color: white;
+}
+
+.status-step span {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    text-align: center;
+}
+
+.status-line {
+    flex: 1;
+    height: 2px;
+    background: #475569;
+    margin: 0 0.5rem;
+}
+
+.case-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.status-badge {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.view-btn {
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.view-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(139, 92, 246, 0.3);
+}
+
+.primary-btn {
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.back-btn {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #475569;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}

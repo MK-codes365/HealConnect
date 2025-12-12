@@ -1,0 +1,162 @@
+.user-management-page {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    color: white;
+}
+
+.page-header {
+    margin-bottom: 2rem;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+.search-filter-bar {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.search-box {
+    flex: 1;
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    background: rgba(30, 41, 59, 0.7);
+    border: 2px solid #475569;
+    border-radius: 12px;
+    color: white;
+    font-size: 1rem;
+}
+
+.search-filter-bar select {
+    padding: 1rem 1.5rem;
+    background: rgba(30, 41, 59, 0.7);
+    border: 2px solid #475569;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+}
+
+.users-table {
+    background: rgba(30, 41, 59, 0.7);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table-header, .table-row {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1fr 1fr 1.2fr 1.5fr;
+    gap: 1rem;
+    padding: 1.5rem;
+    align-items: center;
+}
+
+.table-header {
+    background: rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+    border-bottom: 2px solid #475569;
+}
+
+.table-row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table-row:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.role-badge {
+    padding: 0.4rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.status-badge {
+    padding: 0.4rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.status-badge.active {
+    background: rgba(20, 184, 166, 0.2);
+    color: #14b8a6;
+    border: 1px solid #14b8a6;
+}
+
+.status-badge.pending {
+    background: rgba(245, 158, 11, 0.2);
+    color: #f59e0b;
+    border: 1px solid #f59e0b;
+}
+
+.status-badge.inactive {
+    background: rgba(100, 116, 139, 0.2);
+    color: #94a3b8;
+    border: 1px solid #64748b;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.approve-btn, .deactivate-btn, .edit-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.approve-btn {
+    background: #14b8a6;
+    color: white;
+}
+
+.deactivate-btn {
+    background: #ef4444;
+    color: white;
+}
+
+.edit-btn {
+    background: #3b82f6;
+    color: white;
+}
+
+.back-btn {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #475569;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}

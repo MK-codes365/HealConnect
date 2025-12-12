@@ -1,3 +1,4 @@
+import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import './HowItWorks.css';
 

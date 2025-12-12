@@ -71,3 +71,15 @@
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
 }
+
+.role-btn.worker {
+    background: rgba(13, 148, 136, 0.1);
+    border: 2px solid #0d9488;
+    color: #14b8a6;
+}
+.role-btn.worker:hover {
+    background: #0d9488;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(13, 148, 136, 0.3);
+}

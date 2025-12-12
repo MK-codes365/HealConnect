@@ -1,0 +1,195 @@
+.new-checkup {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+}
+
+.checkup-header {
+    margin-bottom: 3rem;
+}
+
+.checkup-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.step-indicator {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.1rem;
+}
+
+.step-indicator span {
+    color: #64748b;
+    font-weight: 600;
+}
+
+.step-indicator span.active {
+    color: #14b8a6;
+}
+
+.form-section {
+    background: rgba(30, 41, 59, 0.7);
+    padding: 2.5rem;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+}
+
+.form-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.symptoms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.symptom-btn {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #475569;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 500;
+}
+
+.symptom-btn:hover {
+    border-color: #14b8a6;
+}
+
+.symptom-btn.selected {
+    background: #14b8a6;
+    border-color: #14b8a6;
+}
+
+.custom-symptom {
+    margin-bottom: 2rem;
+}
+
+.custom-symptom label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.custom-symptom input {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #475569;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+}
+
+.vitals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.vital-input {
+    text-align: center;
+}
+
+.vital-icon {
+    font-size: 2.5rem;
+    color: #14b8a6;
+    margin-bottom: 1rem;
+}
+
+.vital-input label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.vital-input input {
+    width: 100%;
+    padding: 0.75rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #475569;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.media-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.upload-box {
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px dashed #475569;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.upload-box p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.record-btn {
+    padding: 0.75rem 1.5rem;
+    background: #ef4444;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.next-btn, .triage-btn {
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.2s;
+}
+
+.next-btn:hover, .triage-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(20, 184, 166, 0.3);
+}
+
+.next-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.back-btn {
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #475569;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.triage-btn {
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+}

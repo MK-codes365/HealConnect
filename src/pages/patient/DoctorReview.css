@@ -1,0 +1,193 @@
+.doctor-review-page {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.review-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.case-ref {
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+.review-section {
+    background: rgba(30, 41, 59, 0.7);
+    padding: 2rem;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(10px);
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-icon {
+    font-size: 1.8rem;
+    color: #14b8a6;
+}
+
+.section-header h2 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.doctor-info {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.doctor-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.doctor-avatar {
+    width: 80px;
+    height: 80px;
+    background: rgba(59, 130, 246, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.doctor-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.specialty {
+    color: #94a3b8;
+    margin-bottom: 0.5rem;
+}
+
+.review-time {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.notes-content {
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    border-left: 4px solid #14b8a6;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.prescription-section {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.prescription-content {
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.prescription-line {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.bullet {
+    font-size: 1.2rem;
+}
+
+.empty-prescription {
+    padding: 2rem;
+    text-align: center;
+    color: #94a3b8;
+    font-style: italic;
+}
+
+.download-btn {
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(139, 92, 246, 0.3);
+}
+
+.submitted-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.info-row strong {
+    color: #14b8a6;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.back-btn, .new-checkup-btn {
+    flex: 1;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.back-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #475569;
+    color: white;
+}
+
+.new-checkup-btn {
+    background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+    color: white;
+}

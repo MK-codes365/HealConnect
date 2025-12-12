@@ -1,26 +1,26 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
-import { FaUsers, FaChartBar, FaClipboardList, FaComments } from 'react-icons/fa';
-import './AdminDashboard.css';
+import { FaUserPlus, FaClipboardList, FaComments, FaCloudUploadAlt } from 'react-icons/fa';
+import './HealthWorkerDashboard.css';
 
-const AdminDashboard = () => {
+const HealthWorkerDashboard = () => {
     const { user, logout } = useAuth();
     const navigate = useNavigate();
 
     const tiles = [
-        { icon: FaUsers, title: 'Manage Users', desc: 'View and manage all system users', path: '/dashboard/admin/users', color: '#14b8a6' },
-        { icon: FaChartBar, title: 'Analytics Dashboard', desc: 'View system statistics and insights', path: '/dashboard/admin/analytics', color: '#3b82f6' },
-        { icon: FaClipboardList, title: 'System Logs', desc: 'Monitor system activity and errors', path: '/dashboard/admin/logs', color: '#8b5cf6' },
-        { icon: FaComments, title: 'Feedback & Issues', desc: 'Manage user feedback and reports', path: '/dashboard/admin/feedback', color: '#f59e0b' }
+        { icon: FaUserPlus, title: 'Register New Patient', desc: 'Add new patient case with symptoms and vitals', path: '/dashboard/worker/register', color: '#14b8a6' },
+        { icon: FaClipboardList, title: 'View Cases Submitted', desc: 'Track all registered patient cases', path: '/dashboard/worker/cases', color: '#3b82f6' },
+        { icon: FaComments, title: 'Doctor Responses', desc: 'Check doctor reviews and prescriptions', path: '/dashboard/worker/responses', color: '#8b5cf6' },
+        { icon: FaCloudUploadAlt, title: 'Offline Uploads', desc: 'Sync cases saved offline', path: '/dashboard/worker/offline', color: '#f59e0b' }
     ];
 
     return (
-        <div className="admin-dashboard">
+        <div className="worker-dashboard">
             <div className="dashboard-header">
                 <div>
                     <h1>Welcome, {user?.name}</h1>
-                    <p className="subtitle">Admin Dashboard</p>
+                    <p className="subtitle">Health Worker Dashboard</p>
                 </div>
                 <button onClick={logout} className="logout-btn">Logout</button>
             </div>
@@ -38,4 +38,4 @@ const AdminDashboard = () => {
     );
 };
 
-export default AdminDashboard;
+export default HealthWorkerDashboard;

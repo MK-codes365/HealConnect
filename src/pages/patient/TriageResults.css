@@ -1,0 +1,151 @@
+.triage-results {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+}
+
+.results-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.results-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.results-header p {
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+.urgency-card {
+    background: rgba(30, 41, 59, 0.7);
+    padding: 3rem;
+    border-radius: 16px;
+    text-align: center;
+    border: 3px solid;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.urgency-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.urgency-card h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.specialty-badge {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.results-section {
+    background: rgba(30, 41, 59, 0.7);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.results-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #14b8a6;
+}
+
+.reason-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #e2e8f0;
+}
+
+.symptoms-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.symptom-tag {
+    padding: 0.5rem 1rem;
+    background: rgba(20, 184, 166, 0.2);
+    border: 1px solid #14b8a6;
+    border-radius: 20px;
+    font-size: 0.95rem;
+}
+
+.vitals-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.vital-item {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.vital-label {
+    display: block;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.vital-value {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #14b8a6;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.download-btn, .send-btn {
+    flex: 1;
+    padding: 1.25rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.2s;
+}
+
+.download-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #475569;
+    color: white;
+}
+
+.download-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.send-btn {
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    color: white;
+}
+
+.send-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(139, 92, 246, 0.3);
+}
