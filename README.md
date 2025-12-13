@@ -2,7 +2,8 @@
 
 > **"Bridging the Gap Between Rural Patients and Urban Specialists"**
 
-![HealConnect Banner](https://via.placeholder.com/1200x400/0f172a/2EE0B6?text=HealConnect+AI+Telemedicine)
+<img width="1865" height="852" alt="Screenshot (54)" src="https://github.com/user-attachments/assets/c3efae75-e0d1-44b8-9195-61f89c6c20c9" />
+
 
 ## 🚀 Overview
 
