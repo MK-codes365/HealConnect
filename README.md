@@ -75,7 +75,7 @@ Follow these steps to set up the project locally:
 1.  **Clone the Repository**
 
     ```bash
-    git clone https://github.com/your-username/HealConnect.git
+    git clone https://github.com/MK-codes365/HealConnect.git
     cd HealConnect
     ```
 
