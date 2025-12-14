@@ -101,7 +101,7 @@ const About = () => {
                                 <div className="member-overlay"></div>
                             </div>
                             <div className="member-info">
-                                <h3>Madhu Madheyshiya</h3>
+                                <h3>Madhu Maddheshiya</h3>
                                 <span className="member-role highlight">Database Administrator</span>
                                 <p>Ensuring data integrity and optimized storage solutions.</p>
                             </div>
